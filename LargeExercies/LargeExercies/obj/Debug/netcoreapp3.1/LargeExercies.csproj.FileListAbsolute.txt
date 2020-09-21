@@ -1,0 +1,13 @@
+C:\Users\empir\source\repos\LargeExercies\LargeExercies\bin\Debug\netcoreapp3.1\LargeExercies.exe
+C:\Users\empir\source\repos\LargeExercies\LargeExercies\bin\Debug\netcoreapp3.1\LargeExercies.deps.json
+C:\Users\empir\source\repos\LargeExercies\LargeExercies\bin\Debug\netcoreapp3.1\LargeExercies.runtimeconfig.json
+C:\Users\empir\source\repos\LargeExercies\LargeExercies\bin\Debug\netcoreapp3.1\LargeExercies.runtimeconfig.dev.json
+C:\Users\empir\source\repos\LargeExercies\LargeExercies\bin\Debug\netcoreapp3.1\LargeExercies.dll
+C:\Users\empir\source\repos\LargeExercies\LargeExercies\bin\Debug\netcoreapp3.1\LargeExercies.pdb
+C:\Users\empir\source\repos\LargeExercies\LargeExercies\obj\Debug\netcoreapp3.1\LargeExercies.csprojAssemblyReference.cache
+C:\Users\empir\source\repos\LargeExercies\LargeExercies\obj\Debug\netcoreapp3.1\LargeExercies.AssemblyInfoInputs.cache
+C:\Users\empir\source\repos\LargeExercies\LargeExercies\obj\Debug\netcoreapp3.1\LargeExercies.AssemblyInfo.cs
+C:\Users\empir\source\repos\LargeExercies\LargeExercies\obj\Debug\netcoreapp3.1\LargeExercies.csproj.CoreCompileInputs.cache
+C:\Users\empir\source\repos\LargeExercies\LargeExercies\obj\Debug\netcoreapp3.1\LargeExercies.dll
+C:\Users\empir\source\repos\LargeExercies\LargeExercies\obj\Debug\netcoreapp3.1\LargeExercies.pdb
+C:\Users\empir\source\repos\LargeExercies\LargeExercies\obj\Debug\netcoreapp3.1\LargeExercies.genruntimeconfig.cache
