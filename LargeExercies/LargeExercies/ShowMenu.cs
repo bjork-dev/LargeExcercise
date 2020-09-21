@@ -2,7 +2,7 @@
 
 namespace LargeExercies
 {
-    public class Menu
+    public static class Menu
     {
         public static int ShowMenu(string prompt, string[] options)
         {
@@ -20,7 +20,7 @@ namespace LargeExercies
                 if (key != null)
                 {
                     Console.CursorLeft = 0;
-                    Console.CursorTop = Console.CursorTop - options.Length;
+                    Console.CursorTop -= options.Length;
                 }
 
                 // Print all the options, highlighting the selected one.

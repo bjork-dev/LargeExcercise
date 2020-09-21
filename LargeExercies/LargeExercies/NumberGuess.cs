@@ -1,20 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace LargeExercies
 {
-    class NumberGuess
+    internal static class NumberGuess
     {
         public static void RunGame()
         {
             Console.Clear();
             Random rand = new Random();
             int guess = 0;
-            string welcome = "Guess a number between 1 and 10";
+            const string welcome = "Guess a number between 1 and 10";
             int num = rand.Next(1, 10);
             Console.WriteLine(welcome);
-
 
             int i = 0;
 
@@ -33,13 +30,11 @@ namespace LargeExercies
                         Console.WriteLine("Too Low");
                     }
                 }
-
                 catch
                 {
                     Console.WriteLine("Guess must be a number");
                     i--;
                 }
-
 
                 i++;
             }
@@ -48,4 +43,3 @@ namespace LargeExercies
         }
     }
 }
-

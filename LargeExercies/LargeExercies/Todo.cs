@@ -2,12 +2,11 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
 
 namespace LargeExercies
 {
-    class Todo
+    internal static class Todo
     {
         public static void ListMenu()
         {
@@ -28,21 +27,24 @@ namespace LargeExercies
                     case 0:
                         List();
                         break;
+
                     case 1:
                         ViewList();
                         break;
+
                     case 2:
                         FinishTask();
                         break;
+
                     case 3:
                         running = false;
                         break;
+
                     default:
                         break;
                 }
             }
         }
-
 
         public static void List()
         {
@@ -60,6 +62,7 @@ namespace LargeExercies
 
             Console.WriteLine($"{input} added.");
         }
+
         public static void ViewList()
         {
             Console.Clear();
@@ -67,8 +70,8 @@ namespace LargeExercies
             Console.WriteLine("--------TODO LIST--------");
             Console.WriteLine(text);
             Console.WriteLine("-------END OF LIST-------");
-
         }
+
         public static void FinishTask()
         {
             Console.Clear();
@@ -98,8 +101,5 @@ namespace LargeExercies
                 }
             }
         }
-
-
     }
-
 }

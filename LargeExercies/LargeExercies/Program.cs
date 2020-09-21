@@ -2,9 +2,9 @@
 
 namespace LargeExercies
 {
-    class Program
+    internal static class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Console.Clear();
             bool running = true;
@@ -20,12 +20,11 @@ namespace LargeExercies
                 "Exit"
             });
 
-
                 if (selectedOption == 0)
                 {
                     NumberGuess.RunGame();
                 }
-                if(selectedOption == 1)
+                if (selectedOption == 1)
                 {
                     Todo.ListMenu();
                 }
@@ -35,9 +34,5 @@ namespace LargeExercies
                 }
             }
         }
-
-
-
     }
 }
-
