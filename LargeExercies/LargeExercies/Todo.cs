@@ -19,6 +19,7 @@ namespace LargeExercies
                 {
                 "Add task",
                 "View tasks",
+                "Search tasks",
                 "Finish task",
                 "Exit"
             });
@@ -33,10 +34,14 @@ namespace LargeExercies
                         break;
 
                     case 2:
-                        FinishTask();
+                        Search();
                         break;
 
                     case 3:
+                        FinishTask();
+                        break;
+
+                    case 4:
                         running = false;
                         break;
 
@@ -55,7 +60,7 @@ namespace LargeExercies
             todo.Add(input);
 
             using (System.IO.StreamWriter file =
-            new System.IO.StreamWriter(@"C:\Users\empir\Documents\List.txt", true))
+            new System.IO.StreamWriter(@"C:\Users\liamb\Documents\List.txt", true))
             {
                 file.WriteLine(input);
             }
@@ -68,7 +73,7 @@ namespace LargeExercies
             Console.Clear();
             try
             {
-                string text = System.IO.File.ReadAllText(@"C:\Users\empir\Documents\List.txt");
+                string text = System.IO.File.ReadAllText(@"C:\Users\liamb\Documents\List.txt");
                 Console.WriteLine("--------TODO LIST--------");
                 Console.WriteLine(text);
                 Console.WriteLine("-------END OF LIST-------");
@@ -77,13 +82,12 @@ namespace LargeExercies
             {
                 Console.WriteLine("Path not found");
             }
-           
         }
 
         public static void FinishTask()
         {
             Console.Clear();
-            string text = File.ReadAllText(@"C:\Users\empir\Documents\List.txt");
+            string text = File.ReadAllText(@"C:\Users\liamb\Documents\List.txt");
             var todos = new List<string>();
             var result = Regex.Split(text, "\r\n|\r|\n");
 
@@ -103,9 +107,32 @@ namespace LargeExercies
                 if (input == b)
                 {
                     string item = input;
-                    var lines = File.ReadAllLines(@"C:\Users\empir\Documents\List.txt").Where(line => line.Trim() != item).ToArray();
+                    var lines = File.ReadAllLines(@"C:\Users\liamb\Documents\List.txt").Where(line => line.Trim() != item).ToArray();
                     Console.WriteLine($"{item} removed from list.");
-                    File.WriteAllLines(@"C:\Users\empir\Documents\List.txt", lines);
+                    File.WriteAllLines(@"C:\Users\liamb\Documents\List.txt", lines);
+                }
+            }
+        }
+
+        public static void Search()
+        {
+            Console.Clear();
+            string text = File.ReadAllText(@"C:\Users\liamb\Documents\List.txt");
+            var todos = new List<string>();
+            var result = Regex.Split(text, "\r\n|\r|\n");
+
+            foreach (string s in result)
+            {
+                todos.Add(s);
+            }
+            Console.WriteLine("Enter task name: ");
+            var input = Console.ReadLine();
+
+            foreach (var s in result)
+            {
+                if (s.Contains(input!))
+                {
+                    Console.WriteLine(s);
                 }
             }
         }
