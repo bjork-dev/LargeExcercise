@@ -87,14 +87,10 @@ namespace LargeExercies
         public static void FinishTask()
         {
             Console.Clear();
-            string text = File.ReadAllText(@"C:\Users\liamb\Documents\List.txt");
-            var todos = new List<string>();
+            var text = File.ReadAllText(@"C:\Users\liamb\Documents\List.txt");
             var result = Regex.Split(text, "\r\n|\r|\n");
 
-            foreach (string s in result)
-            {
-                todos.Add(s);
-            }
+            var todos = result.ToList();
             Console.WriteLine("Which task is completed?");
             Console.WriteLine("-----------------------");
             foreach (var a in todos)
