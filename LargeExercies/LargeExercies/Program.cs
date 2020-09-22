@@ -7,12 +7,12 @@ namespace LargeExercies
         private static void Main(string[] args)
         {
             Console.Clear();
-            bool running = true;
+            var running = true;
             while (running)
             {
                 Console.Clear();
                 Console.WriteLine("");
-                int selectedOption = Menu.ShowMenu("Menu", new[]
+                var selectedOption = Menu.ShowMenu("Menu", new[]
                 {
                 "Play number guess",
                 "Todo list",
@@ -20,17 +20,17 @@ namespace LargeExercies
                 "Exit"
             });
 
-                if (selectedOption == 0)
+                switch (selectedOption)
                 {
-                    NumberGuess.RunGame();
-                }
-                if (selectedOption == 1)
-                {
-                    Todo.ListMenu();
-                }
-                if (selectedOption == 3)
-                {
-                    running = false;
+                    case 0:
+                        NumberGuess.RunGame();
+                        break;
+                    case 1:
+                        Todo.ListMenu();
+                        break;
+                    case 3:
+                        running = false;
+                        break;
                 }
             }
         }

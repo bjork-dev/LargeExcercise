@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\empir\\source\\repos\\LargeExercies\\LargeExercies\\LargeExercies.csproj": {}
+    "C:\\Users\\liamb\\source\\repos\\bjork-dev\\LargeExcercise\\LargeExercies\\LargeExercies\\LargeExercies.csproj": {}
   },
   "projects": {
-    "C:\\Users\\empir\\source\\repos\\LargeExercies\\LargeExercies\\LargeExercies.csproj": {
+    "C:\\Users\\liamb\\source\\repos\\bjork-dev\\LargeExcercise\\LargeExercies\\LargeExercies\\LargeExercies.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\empir\\source\\repos\\LargeExercies\\LargeExercies\\LargeExercies.csproj",
+        "projectUniqueName": "C:\\Users\\liamb\\source\\repos\\bjork-dev\\LargeExcercise\\LargeExercies\\LargeExercies\\LargeExercies.csproj",
         "projectName": "LargeExercies",
-        "projectPath": "C:\\Users\\empir\\source\\repos\\LargeExercies\\LargeExercies\\LargeExercies.csproj",
-        "packagesPath": "C:\\Users\\empir\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\empir\\source\\repos\\LargeExercies\\LargeExercies\\obj\\",
+        "projectPath": "C:\\Users\\liamb\\source\\repos\\bjork-dev\\LargeExcercise\\LargeExercies\\LargeExercies\\LargeExercies.csproj",
+        "packagesPath": "C:\\Users\\liamb\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\liamb\\source\\repos\\bjork-dev\\LargeExcercise\\LargeExercies\\LargeExercies\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\empir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\liamb\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

@@ -49,9 +49,9 @@ namespace LargeExercies
         public static void List()
         {
             Console.Clear();
-            List<string> todo = new List<string>();
+            var todo = new List<string>();
             Console.WriteLine("Enter todo: ");
-            string input = Console.ReadLine();
+            var input = Console.ReadLine();
             todo.Add(input);
 
             using (System.IO.StreamWriter file =
@@ -66,17 +66,25 @@ namespace LargeExercies
         public static void ViewList()
         {
             Console.Clear();
-            string text = System.IO.File.ReadAllText(@"C:\Users\empir\Documents\List.txt");
-            Console.WriteLine("--------TODO LIST--------");
-            Console.WriteLine(text);
-            Console.WriteLine("-------END OF LIST-------");
+            try
+            {
+                string text = System.IO.File.ReadAllText(@"C:\Users\empir\Documents\List.txt");
+                Console.WriteLine("--------TODO LIST--------");
+                Console.WriteLine(text);
+                Console.WriteLine("-------END OF LIST-------");
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Path not found");
+            }
+           
         }
 
         public static void FinishTask()
         {
             Console.Clear();
             string text = File.ReadAllText(@"C:\Users\empir\Documents\List.txt");
-            List<string> todos = new List<string>();
+            var todos = new List<string>();
             var result = Regex.Split(text, "\r\n|\r|\n");
 
             foreach (string s in result)
@@ -85,12 +93,12 @@ namespace LargeExercies
             }
             Console.WriteLine("Which task is completed?");
             Console.WriteLine("-----------------------");
-            foreach (string a in todos)
+            foreach (var a in todos)
             {
                 Console.WriteLine(a);
             }
-            string input = Console.ReadLine();
-            foreach (string b in todos)
+            var input = Console.ReadLine();
+            foreach (var b in todos)
             {
                 if (input == b)
                 {

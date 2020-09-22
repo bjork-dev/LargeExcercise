@@ -38,14 +38,12 @@ namespace LargeExercies
 
                 // Read another key and adjust the selected value before looping to repeat all of this.
                 key = Console.ReadKey().Key;
-                if (key == ConsoleKey.DownArrow)
+                selected = key switch
                 {
-                    selected = Math.Min(selected + 1, options.Length - 1);
-                }
-                else if (key == ConsoleKey.UpArrow)
-                {
-                    selected = Math.Max(selected - 1, 0);
-                }
+                    ConsoleKey.DownArrow => Math.Min(selected + 1, options.Length - 1),
+                    ConsoleKey.UpArrow => Math.Max(selected - 1, 0),
+                    _ => selected
+                };
             }
 
             // Reset the cursor and return the selected option.
